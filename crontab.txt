@@ -1,0 +1,4 @@
+# Run the Python script every 5 minutes
+*/5 * * * * python /usr/src/app/your_script_name.py >> /var/log/cron.log 2>&1
+# Ensure cron daemon keeps running
+* * * * * /usr/bin/true
